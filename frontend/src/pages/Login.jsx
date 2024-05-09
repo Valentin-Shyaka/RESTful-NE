@@ -107,7 +107,7 @@ function Login() {
   };
 
   return (
-    <div className="bg-[#229F97] h-screen flex justify-center">
+    <div className=" bg-secondary h-screen flex justify-center">
       <div className="form bg-main flex max-w-md w-screen h-max justify-center p-8 m-auto">
         <form className="text-center" onSubmit={handleLogin}>
           <img src={logo} className="mb-2 h-1/6 mx-auto" alt="" />
@@ -153,8 +153,9 @@ function Login() {
       <Modal
         ref={childRef}
         width="767px"
+        className="bg-[#000000] h-[90vh]"
         children={
-          <div>
+          <div >
             <div className="modal-title text-center my-10">Signup</div>
             <div className="modal-body">
               <form>
